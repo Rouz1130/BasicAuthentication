@@ -16,7 +16,7 @@ namespace BasicAuthentication.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-
+        // dependency injection in the construtor to configure our services/
         public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext db)
         {
             _userManager = userManager;
