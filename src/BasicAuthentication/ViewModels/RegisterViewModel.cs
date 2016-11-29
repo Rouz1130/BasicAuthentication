@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 // Data model set up for registration/
-namespace BasicAuthentication.ViewModel
+namespace BasicAuthentication.ViewModels
 {
     public class RegisterViewModel
     {
