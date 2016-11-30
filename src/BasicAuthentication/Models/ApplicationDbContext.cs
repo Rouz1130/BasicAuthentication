@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BasicAuthentication.Models;
 
 namespace BasicAuthentication.Models
 {
@@ -13,5 +14,10 @@ namespace BasicAuthentication.Models
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+        public DbSet<item> Items { get; set; }
     }
 }
